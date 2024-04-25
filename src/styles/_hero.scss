@@ -1,0 +1,42 @@
+@use './variables.scss';
+
+.hero {
+    padding-top: 64px;
+    padding-bottom: 100px;
+    background-image: url(../images/present.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &__title {
+        padding-bottom: 64px;
+        color: variables.$textColor;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    &__text {
+        padding-bottom: 64px;
+        color: variables.$textColor;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    @media (max-width: 640px) {
+        .hero {
+            padding: 40px 0;
+
+            &__title {
+                padding-top: 20px;
+                padding-bottom: 24px;
+                font-size: 26px;
+            }
+
+            &__text {
+                padding-bottom: 24px;
+                font-size: 22px;
+            }
+        }
+    }
+}
